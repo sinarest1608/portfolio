@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kshitij Sinha — Marketing Data Analyst & Software Engineer" />
+  <title>Kshitij Sinha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="nav">
+    <span class="nav-logo">KS</span>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme"></button>
+  </nav>
+
+  <!-- ── Bento Grid ── -->
+  <main class="main">
+    <div class="bento-grid" id="bento-grid">
+      <!-- Tiles injected by main.js -->
+    </div>
+  </main>
+
+  <!-- ── Sheet Backdrop ── -->
+  <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+
+  <!-- ── Dialog ── -->
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="sheet-header">
+      <div class="sheet-title-row">
+        <span class="sheet-icon" id="sheet-icon" aria-hidden="true"></span>
+        <h2 class="sheet-title" id="sheet-title"></h2>
+      </div>
+      <button class="sheet-close" id="sheet-close" aria-label="Close panel">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="sheet-body" id="sheet-body">
+      <!-- Content injected by main.js -->
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
