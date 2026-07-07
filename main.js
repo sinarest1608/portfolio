@@ -404,6 +404,7 @@ function buildGenericTile(tile) {
   // ── Projects: colorful icon grid ──
   if (tile.id === "projects") {
     const icons = DATA.projects
+      .slice(0, 9)
       .map((p) => `<span class="tile-proj-icon">${renderLogo(p.icon, 26)}</span>`)
       .join("");
     return `
