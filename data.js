@@ -103,7 +103,7 @@ const DATA = {
 
   projects: [
     {
-      title: "InnerOracle — Grounded RAG Assistant",
+      title: "InnerOracle: Spiritual RAG Assistant",
       icon: "devicon-fastapi-plain colored",
       tech: ["FastAPI", "Qdrant", "Anthropic Claude", "ONNX", "Docker"],
       bullets: [
@@ -113,6 +113,18 @@ const DATA = {
       ],
       github: "https://github.com/sinarest1608/inneroracle",
       demo: "https://www.inneroracle.cc",
+    },
+    {
+      title: "Claudometer: Claude Code Usage Tracker",
+      icon: "devicon-swift-plain colored",
+      tech: ["Swift", "SwiftUI", "AppKit", "Xcode", "macOS"],
+      bullets: [
+        "Built a native macOS menu-bar app in SwiftUI that tracks Claude Code token usage in real time by parsing local JSONL session logs from the CLI and Xcode extension — no API calls or login required.",
+        "Computes daily and weekly usage against configurable reset windows with live countdown timers and an input/output/cache token breakdown, auto-refreshing every 30 seconds.",
+        "Shipped an interactive GitHub Pages marketing site with an in-browser recreation of the live menu-bar dropdown UI.",
+      ],
+      github: "https://github.com/sinarest1608/Claudometer",
+      demo: "https://sinarest1608.github.io/Claudometer/",
     },
     {
       title: "F1 Race Winner Predictor",
@@ -128,7 +140,10 @@ const DATA = {
     },
     {
       title: "Google Play Trend Analysis",
-      icon: { dark: "https://cdn.simpleicons.org/googleplay/ffffff", light: "https://cdn.simpleicons.org/googleplay/01875f" },
+      icon: {
+        dark: "https://cdn.simpleicons.org/googleplay/ffffff",
+        light: "https://cdn.simpleicons.org/googleplay/01875f",
+      },
       tech: ["Next.js", "Java", "OracleDB", "SQL"],
       bullets: [
         "Built a web analytics app in Next.js with Java REST APIs on a 2M+ tuple Google Play Store dataset with 30+ characteristics.",
